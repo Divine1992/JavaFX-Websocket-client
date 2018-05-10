@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<SplitPane dividerPositions="0.3001464128843338" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="523.0" minWidth="685.0" prefHeight="523.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.divine.controller.SampleController">
+    <items>
+        <AnchorPane minHeight="100.0" minWidth="200.0" prefHeight="521.0" prefWidth="200.0">
+            <children>
+                <TableView fx:id="groupList" layoutX="-44.0" layoutY="28.0" prefHeight="521.0" prefWidth="201.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn prefWidth="199.0" text="C1" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </children></AnchorPane>
+        <SplitPane>
+            <items>
+                <SplitPane dividerPositions="0.7293666026871402" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                        <WebView fx:id="WebBrowser" layoutX="4.0" layoutY="8.0" prefHeight="368.0" prefWidth="467.0" />
+                            </children></AnchorPane>
+                        <SplitPane dividerPositions="0.15328467153284672" orientation="VERTICAL" prefHeight="129.0" prefWidth="474.0">
+                            <items>
+                                <AnchorPane prefHeight="53.0" prefWidth="474.0" SplitPane.resizableWithParent="false" />
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TextArea fx:id="messageFiled" prefHeight="80.0" prefWidth="474.0" promptText="Повідомлення..." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </items>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </items>
+</SplitPane>
